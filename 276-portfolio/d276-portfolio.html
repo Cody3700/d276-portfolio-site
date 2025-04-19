@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Cody Beale</h1>
+        <p><em>Web Developer | UX/UI Designer | Software Engineer</em></p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="resume.html">Résumé</a></li>
+            <li><a href="cover-letter.html">Cover Letter</a></li>
+            <li><a href="career-goals.html">Career Goals</a></li>
+        </ul>
+    </nav>
+
+    <main>
+    <section>
+        <h2>Summary</h2>
+        <p><strong>Experienced</strong> full-stack developer with a passion for clean design and intuitive user experience.</p>
+    </section>
+    <h3>Experience</h3>
+    <article>
+        <h4>UX/UI Designer - Freelance.</h4>
+        <p>2020 - Present</p>
+        <p>Designed responsive applications using Figma, HTML, CSS, and JavaScript.<br>Led a team of junior developers and worked for several companies and startups.</p>
+        <h4>Web Designer - Freelance.</h4>
+        <p>2016 - Present</p>
+        <p>Designed responsive websites using HTML, CSS, and JavaScript.</p>
+        
+    </article>
+    <hr>
+    <section>
+        <h3>Skills</h3>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>Python</li>
+            <li>C++/C+</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+            <li>Bash/Shell</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Education</h3>
+        <table>
+            <caption>Academic Background</caption>
+            <thead>
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                    <th>GPA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>B.S. in Software Engineering</td>
+                    <td>State University</td>
+                    <td>2024</td>
+                    <td>3.9</td>
+                </tr>
+                <tr>
+                    <td>GED Certificate</td>
+                    <td>Sophia Learning LLC</td>
+                    <td>2024</td>
+                    <td>3.9</td>
+                </tr>
+                <tr>
+                    <td>Certification</td>
+                    <td>UX/UI Bootcamp</td>
+                    <td>2020</td>
+                    <td>Pass</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Cody Beale | Contact: codybealeux@gmail.com</p>
+    <div id="date"></div>
+</footer>
+
+<script>
+    document.getElementById("date").innerText = "Today's date: " + new Date().toLocaleDateString();
+    console.log("Résumé page loaded successfully.");
+</script>
+
+</html>
