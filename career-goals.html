@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="style.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Goals - Cody Beale</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header, nav, main, footer {
+      padding: 20px;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+    }
+
+    nav {
+      background-color: #555;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    main {
+      background: white;
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+    }
+
+    form {
+      display: grid;
+      gap: 10px;
+      margin-top: 20px;
+      background: #f9f9f9;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input, select, textarea {
+      padding: 8px;
+      font-size: 1rem;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    img, video, audio {
+      margin-top: 15px;
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Career Goals</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="cover-letter.html">Cover Letter</a>
+    <a href="career-goals.html">Career Goals</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Where I’m Headed</h2>
+      <p>
+        My goal is to become a skilled software engineer with a strong emphasis on user-centered design and creative problem-solving.
+        I’m passionate about blending functionality and aesthetic — creating apps that are not only useful, but delightful to use.
+      </p>
+    </section>
+
+    <section>
+      <h3>Visual Inspiration</h3>
+      <img src="https://via.placeholder.com/600x300" alt="Career Inspiration Image">
+
+      <h3>Motivational Video</h3>
+      <video controls width="600">
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <h3>Focus Music</h3>
+      <audio controls>
+        <source src="sample-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <section>
+      <h2>Contact Me</h2>
+      <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="company">Company Name:</label>
+        <input type="text" id="company" name="company">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <p>Best Contact Time:</p>
+        <label><input type="radio" name="contactTime" value="am"> A.M.</label>
+        <label><input type="radio" name="contactTime" value="pm"> P.M.</label>
+        <label><input type="radio" name="contactTime" value="anytime" checked> Anytime</label>
+
+        <label for="contactMethod">Preferred Contact Method:</label>
+        <select id="contactMethod" name="contactMethod">
+          <option value="phone">Phone</option>
+          <option value="email">Email</option>
+          <option value="text">Text</option>
+        </select>
+
+        <input type="submit" value="Send">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cody Beale. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

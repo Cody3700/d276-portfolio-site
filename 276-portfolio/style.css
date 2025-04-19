@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Element selector */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Typography formatting + background color */
+  h1, h2, h3 {
+    color: #004466;
+    margin-bottom: 10px;
+  }
+  
+  /* Class selector */
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+  }
+  
+  /* ID selector */
+  #highlight {
+    background-color: yellow;
+    font-weight: bold;
+  }
+  
+  /* Descendant selector */
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  /* Pseudo-class selector */
+  nav a:hover {
+    background-color: #333;
+  }
+  
+  /* Additional styling */
+  header, footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Styling for lists */
+  ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  ol {
+    list-style-type: decimal-leading-zero;
+    padding-left: 20px;
+  }
+  
+  /* Form styling */
+  input, textarea, select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    width: 100%;
+  }
+  
+  form label {
+    margin-top: 10px;
+    display: block;
+  }
+  
+  form input[type="submit"] {
+    background-color: #004466;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 15px;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #006699;
+  }
