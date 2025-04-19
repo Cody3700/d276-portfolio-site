@@ -11,7 +11,14 @@
     color: #333;
     line-height: 1.6;
   }
-  
+  /* Formatting for margins and padding the whole page*/
+  body {
+    margin: 0;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* optional for a cleaner look */
+  }
+
   /* Typography formatting + background color */
   h1, h2, h3 {
     color: #004466;
@@ -25,6 +32,11 @@
     padding: 15px;
     margin: 20px 0;
     border-radius: 5px;
+  }
+
+  /* Table formatting*/
+  table td, table th {
+    padding: 12px;
   }
   
   /* ID selector */
@@ -53,6 +65,13 @@
     text-align: center;
   }
   
+  /* More styling for table*/
+  .academic-table td, .academic-table th {
+    padding: 15px;
+    border: 1px solid #ccc;
+  }
+  
+
   /* Styling for lists */
   ul {
     list-style-type: square;
