@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <title>Cover Letter - Cody Beale</title>
     <style>
     body {
         font-family: arial, sans-serif;
         margin: 2rem;
-        background-color: #494949;
+        background-color: #606060;
     }
     header, nav, main, footer {
         margin-bottom: 2rem;
@@ -22,7 +23,7 @@
         padding: 1.5rem;
         border: 1px solid #ddd;
         border-radius: 8px;
-        box-shadow: 2px 2px 6px rgba (0,0,0,0.05);
+        box-shadow: 2px 2px 6px rgba(0,0,0,0.05);
     }
     hr {
         margin: 1.5rem 0;
@@ -34,13 +35,14 @@
 
     <header>
       <h1>Cover Letter</h1>
-      <p><strong>Cody Beale</strong> | Sacramento, CA | <em>czenb007@gmail.com</em></p>
+      <p><strong>Cody Beale</strong> | Sacramento, CA | <em>codybealeux@gmail.com</em></p>
     </header>
   
     <nav>
+      <a href="index.html">Home</a>
       <a href="resume.html">Resume</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
+      <a href="cover-letter.html">Cover Letter</a>
+      <a href="career-goals.html">Career Goals</a>
     </nav>
   
     <main>
@@ -53,7 +55,7 @@
           </p>
   
           <p>
-            My experiences at companies like <em>Eaze</em> and <em>Whole Foods</em> have developed my strengths in problem-solving, cross-team collaboration, and technical troubleshooting. I am passionate about creating intuitive digital experiences and am especially proud of my recent project, <em>Riparian</em>, which combines storytelling, psychology, and interactive design.
+            My experiences at companies like <em>Esteemed</em> and <em>Amazon</em> have developed my strengths in problem-solving, cross-team collaboration, and technical troubleshooting. I am passionate about creating intuitive digital experiences and am especially proud of my recent project, <em>Riparian</em>, which combines storytelling, psychology, and interactive design.
           </p>
   
           <p>
@@ -63,7 +65,47 @@
           <p>Sincerely,<br><strong>Cody Beale</strong></p>
         </article>
       </section>
-  
+
+      <section>
+        <article class="card">
+          <h2>Contact Me</h2>
+          <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+      
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+      
+            <label for="company">Company Name:</label>
+            <input type="text" id="company" name="company">
+      
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+      
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+      
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+      
+            <p>Best Contact Time:</p>
+            <label><input type="radio" name="contactTime" value="am"> A.M.</label>
+            <label><input type="radio" name="contactTime" value="pm"> P.M.</label>
+            <label><input type="radio" name="contactTime" value="anytime" checked> Anytime</label>
+      
+            <label for="contactMethod">Preferred Contact Method:</label>
+            <select id="contactMethod" name="contactMethod">
+              <option value="phone">Phone</option>
+              <option value="email">Email</option>
+              <option value="text">Text</option>
+            </select>
+      
+            <input type="submit" value="Send">
+          </form>
+        </article>
+      </section>
+      
+
       <hr>
   
       <footer>

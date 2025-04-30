@@ -16,6 +16,7 @@
 
     <nav>
         <ul>
+            <li><a href="index.html">Home</a></li>
             <li><a href="resume.html">Résumé</a></li>
             <li><a href="cover-letter.html">Cover Letter</a></li>
             <li><a href="career-goals.html">Career Goals</a></li>
@@ -84,6 +85,43 @@
             </tbody>
         </table>
     </section>
+    <hr>
+    <section>
+        <h2>Contact Me</h2>
+        <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required>
+  
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required>
+  
+          <label for="company">Company Name:</label>
+          <input type="text" id="company" name="company">
+  
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+  
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone">
+  
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+  
+          <p>Best Contact Time:</p>
+          <label><input type="radio" name="contactTime" value="am"> A.M.</label>
+          <label><input type="radio" name="contactTime" value="pm"> P.M.</label>
+          <label><input type="radio" name="contactTime" value="anytime" checked> Anytime</label>
+  
+          <label for="contactMethod">Preferred Contact Method:</label>
+          <select id="contactMethod" name="contactMethod">
+            <option value="phone">Phone</option>
+            <option value="email">Email</option>
+            <option value="text">Text</option>
+          </select>
+  
+          <input type="submit" value="Send">
+        </form>
+      </section>
 
 </body>
 
