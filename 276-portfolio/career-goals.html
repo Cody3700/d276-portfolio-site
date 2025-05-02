@@ -69,6 +69,21 @@
       margin-top: 15px;
       max-width: 100%;
     }
+    .same-size-img {
+    width: 100%;
+    max-width: 600px; /* increased from 400px */
+    height: 350px;     /* increased from 250px */
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .image-wrapper {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+    
   </style>
 </head>
 <body>
@@ -99,8 +114,11 @@
 
     <section>
       <h3>Visual Inspiration</h3>
-      <img src="images/motivational_image.jpg" alt="Motivational Quote for Coders" width="500">
-    
+      <div class="image-wrapper">
+        <img src="images/motivational_image.jpg" alt="Project 1" class="same-size-img">
+        <img src="images/motivational_image2.jpg" alt="Project 2" class="same-size-img">
+      </div>
+      
       <h3>Motivational Video</h3>
       <p>Travel is one of my passions. Here is come video of <em>Jiufen</em> in Taiwan.</p>
       <p>It's such a beautiful and inspiring place that I'm seriously considering moving there for a few years once I secure a remote position.</p>
@@ -110,7 +128,8 @@
       
       
       <h3>Focus Music</h3>
-      <p>When I’m not busy perfecting my code, I love creating my own music. Here’s an electronic jam I made to energize your coding experience.</p>
+      <p>When I’m not busy perfecting my code, I love creating my own music.</p> 
+      <p>Here’s an electronic jam I made to energize your coding experience.</p>
       <audio src="music/we_came_from_light.mp3" autoplay loop controls>
         Your browser does not support the audio element.
       </audio>
