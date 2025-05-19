@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="css/style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Career Goals - Cody Beale</title>
@@ -14,7 +14,7 @@
       color: #333;
     }
 
-    header, nav, main, footer {
+    header, main, footer {
       padding: 20px;
     }
 
@@ -23,19 +23,7 @@
       color: white;
     }
 
-    nav {
-      background-color: #555;
-      display: flex;
-      gap: 20px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      
-    }
-
-    main {
+  main {
       background: white;
       padding: 20px;
     }
@@ -71,10 +59,11 @@
     }
     .same-size-img {
     width: 100%;
-    max-width: 600px; /* increased from 400px */
-    height: 350px;     /* increased from 250px */
+    max-width: 600px; 
+    height: 350px;     
     object-fit: cover;
     border-radius: 8px;
+    margin-bottom: 20px;
   }
 
   .image-wrapper {
@@ -97,13 +86,14 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="resume.html">View My Resume</a></li>
       <li><a href="coverletter.html">Cover Letter</a></li>
-      <li><a href="goals.html">Career Goals</a></li>
+      <li><a href="goals.html" class="active">Career Goals</a></li>
     </ul>
   </nav>
   
 
 
   <main>
+    <div class="container">
     <section>
       <h2>Where I’m Headed</h2>
       <p>
@@ -115,17 +105,21 @@
     <section>
       <h3>Visual Inspiration</h3>
       <div class="image-wrapper">
-        <img src="images/motivational_image.jpg" alt="Project 1" class="same-size-img">
-        <img src="images/motivational_image2.jpg" alt="Project 2" class="same-size-img">
+        <img src="images/motivational_image.jpg" alt="Modern programming humor 1" class="same-size-img">
+        <img src="images/motivational_image2.jpg" alt="Modern programming humor 2" class="same-size-img">
       </div>
       
       <h3>Motivational Video</h3>
-      <p>Travel is one of my passions. Here is come video of <em>Jiufen</em> in Taiwan.</p>
+      <p>Travel is one of my passions. Here are some videos of <em>Jiufen</em> & <em>Guanyinshan</em> in Taiwan.</p>
       <p>It's such a beautiful and inspiring place that I'm seriously considering moving there for a few years once I secure a remote position.</p>
-      <video src="media/ruifang_district_taiwan.mp4" autoplay loop muted playsinline width="600">
-        Your browser does not support the video tag.
-      </video>
-      
+      <div class="video-wrapper">
+        <video src="media/ruifang_district_taiwan.mp4" autoplay loop muted playsinline class="same-size-img">
+          Your browser does not support the video tag.
+        </video>
+        <video src="media/longyuan_village_taiwan.mp4" autoplay loop muted playsinline class="same-size-img">
+          Your browser does not support the video tag.
+        </video>
+      </div>
       
       <h3>Focus Music</h3>
       <p>When I’m not busy perfecting my code, I love creating my own music.</p> 
@@ -136,48 +130,66 @@
       
       
     </section>
-
-    <section>
-      <h2>Contact Me</h2>
-      <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
-        <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" required>
-
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" required>
-
-        <label for="company">Company Name:</label>
-        <input type="text" id="company" name="company">
-
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone">
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <p>Best Contact Time:</p>
-        <label><input type="radio" name="contactTime" value="am"> A.M.</label>
-        <label><input type="radio" name="contactTime" value="pm"> P.M.</label>
-        <label><input type="radio" name="contactTime" value="anytime" checked> Anytime</label>
-
-        <label for="contactMethod">Preferred Contact Method:</label>
-        <select id="contactMethod" name="contactMethod">
-          <option value="phone">Phone</option>
-          <option value="email">Email</option>
-          <option value="text">Text</option>
-        </select>
-
-        <input type="submit" value="Send">
-      </form>
-    </section>
+<hr>
+     <section>
+        
+        <article>
+            <h2>Contact Me</h2>
+            <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+              <label for="firstName">First Name:</label>
+              <input type="text" id="firstName" name="firstName" required>
+          
+              <label for="lastName">Last Name:</label>
+              <input type="text" id="lastName" name="lastName" required>
+          
+              <label for="company">Company Name:</label>
+              <input type="text" id="company" name="company">
+          
+              <label for="email">Email Address:</label>
+              <input type="email" id="email" name="email" required>
+          
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone">
+          
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+          
+              <p>Best Contact Time:</p>
+              <label><input type="radio" name="contactTime" value="am"> A.M.</label>
+              <label><input type="radio" name="contactTime" value="pm"> P.M.</label>
+              <label><input type="radio" name="contactTime" value="anytime" checked> Anytime</label>
+          
+              <label for="contactMethod">Preferred Contact Method:</label>
+              <select id="contactMethod" name="contactMethod">
+                <option value="phone">Phone</option>
+                <option value="email">Email</option>
+                <option value="text">Text</option>
+              </select>
+          
+              <input type="submit" value="Send">
+            </form>
+          </article>          
+    </div>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Cody Beale. All rights reserved.</p>
-  </footer>
+ <footer>
+    <p>&copy; 2025 Cody Beale | Contact: codybealeux@gmail.com</p>
+    <div id="date"></div>
+    <h2>Code Attributions</h2>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toDateString" target="_blank">MDN: Date.toDateString()</a> – for JavaScript date script</li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById" target="_blank">MDN: Document.getElementById()</a> – for element selection</li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables" target="_blank">MDN: HTML Tables</a> – for table structure and elements</li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics" target="_blank">MDN: HTML Semantics</a> – for use of HTML5 structural tags</li>
+  </ul>
+</footer>
+
+
+<script>
+    // Borrowed from MDN: Using toLocaleDateString() to format and display the current date
+    document.getElementById("date").innerText = "Today's date: " + new Date().toLocaleDateString();
+    console.log("Résumé page loaded successfully.");
+</script>
 
 </body>
 </html>

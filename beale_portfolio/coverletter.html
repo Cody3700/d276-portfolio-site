@@ -1,89 +1,80 @@
+<!-- Borrowed from MDN: Standard HTML5 doctype and language attribute for proper document parsing and accessibility -->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
+<html lang="en"> 
+<head> 
+  <!-- Borrowed from MDN: Declaring UTF-8 charset and external CSS link setup -->
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+
     <title>Cover Letter - Cody Beale</title>
     <style>
+       
+       header, main, footer {
+      padding: 20px;
+    }
         body {
             font-family: arial, sans-serif;
-            margin: 2rem;
+            margin: 0;
+            padding: 0;
             background-color: #606060;
         }
 
-        header, nav, main, footer {
-            margin-bottom: 2rem;
-        }
-
-        nav a {
-            margin-right: 15px;
-            text-decoration: none;
-            color: #007acc;
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
         }
 
         article {
             background-color: #fff;
             padding: 1.5rem;
             border: 1px solid #ddd;
-            border-radius: 8px;
+            border-radius: 0px;
             box-shadow: 2px 2px 6px rgba(0,0,0,0.05);
         }
 
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 0.75rem;
-        }
+         form {
+            display: grid;
+            gap: 10px;
+            margin-top: 20px;
+            background: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+    }
 
         label {
             font-weight: bold;
             margin-top: 0.5rem;
         }
 
-        input[type="text"],
-        input[type="email"],
-        input[type="tel"],
-        textarea,
-        select {
-            padding: 0.5rem;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            width: 100%;
-            box-sizing: border-box;
-        }
+        input, select, textarea {
+            padding: 8px;
+            font-size: 1rem;
+    }
 
-        input[type="radio"] {
-            margin-right: 0.25rem;
-        }
-
-        input[type="submit"] {
-            background-color: #007acc;
-            color: white;
-            border: none;
-            padding: 0.75rem;
-            border-radius: 5px;
+    label {
             font-weight: bold;
-            cursor: pointer;
-            margin-top: 1rem;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #005f99;
-        }
-
+    }
         hr {
             margin: 1.5rem 0;
         }
     </style>
 </head>
 
-<body>
+<!-- Borrowed from MDN: Use of semantic HTML elements for document structure (header, nav, main, footer) -->
+<body> 
+
 
     <header>
       <h1>Cover Letter</h1>
       <p><strong>Cody Beale</strong> | Sacramento, CA | <em>codybealeux@gmail.com</em></p>
     </header>
   
+    <!-- 
+  Navbar styling and layout approach informed by examples and best practices from MDN Web Docs.
+  Source: https://developer.mozilla.org/
+-->
     <nav>
         <ul class="nav-bar">
           <li><a href="index.html">Home</a></li>
@@ -93,9 +84,8 @@
         </ul>
       </nav>
       
-    
-  
     <main>
+        <div class="container">
       <section>
           <article>
               <p>Dear <mark>Hiring Manager</mark>,</p>
@@ -128,52 +118,71 @@
           </article>
       </section>
   
-
+<hr>
       <section>
+        
         <article>
-        <h2>Contact Me</h2>
-        <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
-          <label for="firstName">First Name:</label>
-          <input type="text" id="firstName" name="firstName" required>
-  
-          <label for="lastName">Last Name:</label>
-          <input type="text" id="lastName" name="lastName" required>
-  
-          <label for="company">Company Name:</label>
-          <input type="text" id="company" name="company">
-  
-          <label for="email">Email Address:</label>
-          <input type="email" id="email" name="email" required>
-  
-          <label for="phone">Phone Number:</label>
-          <input type="tel" id="phone" name="phone">
-  
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-  
-          <p>Best Contact Time:</p>
-          <label><input type="radio" name="contactTime" value="am"> A.M.</label>
-          <label><input type="radio" name="contactTime" value="pm"> P.M.</label>
-          <label><input type="radio" name="contactTime" value="anytime" checked> Anytime</label>
-  
-          <label for="contactMethod">Preferred Contact Method:</label>
-          <select id="contactMethod" name="contactMethod">
-            <option value="phone">Phone</option>
-            <option value="email">Email</option>
-            <option value="text">Text</option>
-          </select>
-  
-          <input type="submit" value="Send">
-        </form>
-        </article>
-      </section>
+            <h2>Contact Me</h2>
+            <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+              <label for="firstName">First Name:</label>
+              <input type="text" id="firstName" name="firstName" required>
+          
+              <label for="lastName">Last Name:</label>
+              <input type="text" id="lastName" name="lastName" required>
+          
+              <label for="company">Company Name:</label>
+              <input type="text" id="company" name="company">
+          
+              <label for="email">Email Address:</label>
+              <input type="email" id="email" name="email" required>
+          
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone">
+          
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+          
+              <p>Best Contact Time:</p>
+              <label><input type="radio" name="contactTime" value="am"> A.M.</label>
+              <label><input type="radio" name="contactTime" value="pm"> P.M.</label>
+              <label><input type="radio" name="contactTime" value="anytime" checked> Anytime</label>
+          
+              <label for="contactMethod">Preferred Contact Method:</label>
+              <select id="contactMethod" name="contactMethod">
+                <option value="phone">Phone</option>
+                <option value="email">Email</option>
+                <option value="text">Text</option>
+              </select>
+          
+              <input type="submit" value="Send">
+            </form>
+          </article>          
 
+    </div>
       <hr>
+
+ </main>
+
+   <footer>
+    <p>&copy; 2025 Cody Beale | Contact: codybealeux@gmail.com</p>
+    <div id="date"></div>
+    <h2>Code Attributions</h2>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toDateString" target="_blank">MDN: Date.toDateString()</a> – for JavaScript date script</li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById" target="_blank">MDN: Document.getElementById()</a> – for element selection</li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables" target="_blank">MDN: HTML Tables</a> – for table structure and elements</li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics" target="_blank">MDN: HTML Semantics</a> – for use of HTML5 structural tags</li>
+  </ul>
+</footer>
+
+
+<script>
+    // Borrowed from MDN: Using toLocaleDateString() to format and display the current date
+    document.getElementById("date").innerText = "Today's date: " + new Date().toLocaleDateString();
+    // Console log for confirmation – original
+    console.log("Résumé page loaded successfully.");
+</script> 
   
-      <footer>
-        <p>&copy; 2025 Cody Beale</p>
-      </footer>
-    </main>
   
 </body>
 
