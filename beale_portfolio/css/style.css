@@ -132,6 +132,15 @@ form {
   border-radius: 5px;
 }
 
+a {
+  color: #2e75bb; /* Lighter, clean blue */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #004466; /* A little darker for hover */
+  text-decoration: underline;
+}
 
 
 label {
