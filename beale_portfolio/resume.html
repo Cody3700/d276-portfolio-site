@@ -1,80 +1,38 @@
-<!-- Borrowed from MDN: Standard HTML5 doctype and language attribute for proper document parsing and accessibility -->
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><!-- Source: MDN [1] -->
+<html lang="en"><!-- Source: MDN [1] -->
 <head>
-  <!-- Borrowed from MDN: Declaring UTF-8 charset and external CSS link setup -->
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8" /><!-- Source: MDN [2] -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="css/style.css">
   <title>Cody Beale | Resume</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-}
 
-    .container {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-}
-
-    
-    footer {
-      text-align: center;
-      padding: 1rem;
-      border-radius: 5px;
-    }
-    
-    section {
-      margin-bottom: 2rem;
-    }
-
-    table, th, td {
-      border: 1px solid #888;
-      border-collapse: collapse;
-      padding: 0.5rem;
-    }
-
-    table {
-      margin: 1rem 0;
-      width: 100%;
-    }
-
-    caption {
-      font-weight: bold;
-      margin-bottom: 0.5rem;
-    }
-  </style>
 </head>
 
 <!-- Page structure uses semantic HTML5 tags based on MDN Semantics guide: https://developer.mozilla.org/en-US/docs/Glossary/Semantics -->
 <body>
-
+  
   <header>
     <h1>Cody Beale</h1>
     <p>
       Sacramento, CA<br>
-      <strong>Phone:</strong> 916-202-6027 |
-      <strong>Email:</strong> <a href="mailto:Codybealeux@gmail.com">Codybealeux@gmail.com</a><br>
+      <strong>Phone:</strong> (916)206-1985 |
+      <strong>Email:</strong> <a href="mailto:codybealeux@gmail.com">codybealeux@gmail.com</a>
+<br>
       <a href="https://uxfol.io/codybealeux" target="_blank">Portfolio</a>
     </p>
-    <div id="current-date"></div>
+    <!-- JavaScript date insertion reference: MDN [4] -->
+      <p id="date"></p><sup><a href="#ref-4">[4]</a></sup>
   </header>
 
-   <!-- 
-  Navbar styling and layout approach informed by examples and best practices from MDN Web Docs.
-  Source: https://developer.mozilla.org/
--->
+<!-- Navbar layout reference: MDN [5] -->
   <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="resume.html">View My Resume</a></li>
-      <li><a href="coverletter.html">Cover Letter</a></li>
-      <li><a href="goals.html">Career Goals</a></li>
-    </ul>
-  </nav>
+  <ul class="nav-bar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="resume.html" aria-current="page">View My Resume</a></li>
+    <li><a href="coverletter.html">Cover Letter</a></li>
+    <li><a href="goals.html">Career Goals</a></li>
+  </ul>
+</nav>
 
   <main>
     <div class="container">
@@ -107,9 +65,12 @@
           <li>Created style guides, component libraries, and user flows</li>
         </ul>
       </article>
+
       <article>
         <h3>Property Manager – West Park Apts (2019–2021)</h3>
-        <p>Oversaw renovations, design upgrades, and tenant communication.</p>
+        <ul>
+        <li>Oversaw renovations, design upgrades, and tenant communication</li>
+        </ul>
       </article>
     </section>
 
@@ -124,8 +85,7 @@
     <section>
       <h2>Project Table</h2>
       <table>
-        <!-- Table markup structure follows conventions from MDN Web Docs on HTML Tables: https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables -->
-
+            <!-- Table structure reference: MDN [6] -->
         <caption>Sample Projects</caption>
         <thead>
           <tr>
@@ -156,45 +116,95 @@
           </tr>
         </tbody>
       </table>
+              <sup><a href="#ref-6">[6]</a></sup>
     </section>
 
     <section>
       <h2>Highlights</h2>
-      <ul>
-        <li>Visual storyteller with a passion for design systems</li>
-        <li>Master Mason committed to community and ethics</li>
-        <li>Inspired by mythology, symbolism, and interface psychology</li>
+      <ul class="custom-marker">
+
+        <li>Full-Stack Project Experience: Built responsive web applications using HTML, CSS, JavaScript, and modern frameworks. Familiar with front-end and back-end integration.</li>
+
+        <li>Tools & Technologies: Hands-on experience with Git, Visual Studio Code, Node.js, React, MongoDB, and RESTful APIs through project-based learning and internships.</li>
+
+        <li>UX/UI Design Background: Applied design thinking to create intuitive user interfaces, combining aesthetics with usability. Prototyped with Figma and Adobe XD.</li>
+
       </ul>
     </section>
 
-    <section>
-      <h2>Fun Fact</h2>
-      <p>I once designed a full UI kit inspired by <span>Renaissance art</span> and <span>Gothic architecture</span>!</p>
-    </section>
     </div>
   </main>
 
   <footer>
   <p>&copy; 2025 Cody Beale | Contact: codybealeux@gmail.com</p>
-  <p>
-    <section id="attributions">
-  <h2>Code Attributions</h2>
-  <ul>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toDateString" target="_blank">MDN: Date.toDateString()</a> – for JavaScript date script</li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById" target="_blank">MDN: Document.getElementById()</a> – for element selection</li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables" target="_blank">MDN: HTML Tables</a> – for table structure and elements</li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics" target="_blank">MDN: HTML Semantics</a> – for use of HTML5 structural tags</li>
-  </ul>
-</section>
+
+  <section id="code-attributions">
+    <h2>Code Attributions</h2>
+    <ol>
+      <li id="ref-1"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang" target="_blank" rel="noopener noreferrer">MDN Web Docs, "HTML5 Doctype & Language attribute," accessed May 21, 2025</a></li>
+      <li id="ref-2"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta" target="_blank" rel="noopener noreferrer">MDN Web Docs, "Meta charset and viewport tags," accessed May 21, 2025</a></li>
+      <li id="ref-3"><a href="https://www.w3schools.com/css/css_form.asp" target="_blank" rel="noopener noreferrer">W3Schools, "CSS Forms Tutorial," accessed May 21, 2025</a></li>
+      <li id="ref-4"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toDateString" target="_blank" rel="noopener noreferrer">MDN Web Docs, "JavaScript Date.toDateString()," accessed May 21, 2025</a></li>
+      <li id="ref-5"><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks" target="_blank" rel="noopener noreferrer">MDN Web Docs, "HTML Navigation Bar Basics," accessed May 21, 2025</a></li>
+      <li id="ref-6"><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables" target="_blank" rel="noopener noreferrer">MDN Web Docs, "HTML Tables," accessed May 21, 2025</a></li>
+      <li id="ref-7"><a href="https://www.w3schools.com/html/html_forms.asp" target="_blank" rel="noopener noreferrer">W3Schools, "HTML Forms," accessed May 21, 2025</a></li>
+      <li id="ref-8"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" target="_blank" rel="noopener noreferrer">MDN Web Docs, "HTML Image Element," accessed May 21, 2025</a></li>
+      <li id="ref-9"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video" target="_blank" rel="noopener noreferrer">MDN Web Docs, "HTML Video Element," accessed May 21, 2025</a></li>
+      <li id="ref-10"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank" rel="noopener noreferrer">MDN Web Docs, "HTML Audio Element," accessed May 21, 2025</a></li>
+    </ol>
+  </section>
+
+  <section id="media-attributions">
+    <h2>Media Attributions</h2>
+    <ol start="11">
+      <li id="ref-11">Videos of Jiufen and Guanyinshan, Taiwan — recorded by Cody Beale, 2025, Taiwan.</li>
+      <li id="ref-12">Original music track <em>We Came From Light</em> composed by Cody Beale, 2025, Sacramento, CA.</li>
+      <li id="ref-13">Images on this page sourced from <a href="https://www.wallpaperflare.com" target="_blank" rel="noopener noreferrer">Wallpaperflare</a>, accessed May 21, 2025.</li>
+    </ol>
+  </section>
 </footer>
+
   <script>
-  // Borrowed from MDN: Using toLocaleDateString() to format and display the current date
-  const dateDiv = document.getElementById("current-date"); // Uses getElementById from https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
-  const today = new Date();
-  dateDiv.textContent = "Today's Date: " + today.toDateString();
+      // Date display script – MDN [4]
+    document.getElementById("date").innerText = "Today's date: " + new Date().toLocaleDateString();
+    console.log("Résumé page loaded successfully.");
+
   
-  // Console log for confirmation – original
-  console.log("Resume loaded successfully for Cody Beale.");
+  // Wait for the DOM to load
+  document.addEventListener("DOMContentLoaded", function () {
+    // Select all numbered reference links
+    const refLinks = document.querySelectorAll('a[href^="#ref-"]');
+
+    refLinks.forEach(link => {
+      link.addEventListener("click", function (event) {
+        // Prevent default jump to handle custom scroll & highlight
+        event.preventDefault();
+
+        // Get the target ID from href attribute, e.g. "#ref-1"
+        const targetId = this.getAttribute("href").substring(1);
+        const targetElem = document.getElementById(targetId);
+
+        if (targetElem) {
+          // Scroll smoothly to the reference item in footer
+          targetElem.scrollIntoView({ behavior: "smooth", block: "center" });
+
+          // Remove highlight from any previously highlighted refs
+          document.querySelectorAll(".highlight-ref").forEach(el => {
+            el.classList.remove("highlight-ref");
+          });
+
+          // Add highlight class to the clicked reference item
+          targetElem.classList.add("highlight-ref");
+
+          // Optionally, remove highlight after a few seconds (e.g., 3 seconds)
+          setTimeout(() => {
+            targetElem.classList.remove("highlight-ref");
+          }, 3000);
+        }
+      });
+    });
+  });
+
 </script>
 
 </body>

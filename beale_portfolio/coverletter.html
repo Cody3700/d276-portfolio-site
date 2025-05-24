@@ -1,19 +1,16 @@
-<!-- Borrowed from MDN: Standard HTML5 doctype and language attribute for proper document parsing and accessibility -->
-<!DOCTYPE html>
-<html lang="en"> 
+<!DOCTYPE html><!-- Source: MDN [1] -->
+<html lang="en"><!-- Source: MDN [1] -->
 <head> 
-  <!-- Borrowed from MDN: Declaring UTF-8 charset and external CSS link setup -->
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"><!-- Source: MDN [2] -->
   <link rel="stylesheet" href="css/style.css">
 
     <title>Cover Letter - Cody Beale</title>
-    <style>
+    <style>/* Form styling inspired by W3Schools [3] */
        
        header, main, footer {
       padding: 20px;
     }
         body {
-            font-family: arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #606060;
@@ -53,42 +50,35 @@
             font-size: 1rem;
     }
 
-    label {
-            font-weight: bold;
-    }
-        hr {
-            margin: 1.5rem 0;
-        }
     </style>
 </head>
 
-<!-- Borrowed from MDN: Use of semantic HTML elements for document structure (header, nav, main, footer) -->
+<!-- Page structure uses semantic HTML5 tags based on MDN Semantics guide: https://developer.mozilla.org/en-US/docs/Glossary/Semantics -->
 <body> 
 
 
-    <header>
-      <h1>Cover Letter</h1>
-      <p><strong>Cody Beale</strong> | Sacramento, CA | <em>codybealeux@gmail.com</em></p>
-    </header>
+      <header>
+    <h1>Cover Letter</h1>
+     <p><em>Web Developer | UX/UI Designer | Software Engineer</em></p>
+           <!-- JavaScript date insertion reference: MDN [4] -->
+      <p id="date"></p><sup><a href="#ref-4">[4]</a></sup>
+  </header>
   
-    <!-- 
-  Navbar styling and layout approach informed by examples and best practices from MDN Web Docs.
-  Source: https://developer.mozilla.org/
--->
-    <nav>
-        <ul class="nav-bar">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="resume.html">View My Resume</a></li>
-          <li><a href="coverletter.html">Cover Letter</a></li>
-          <li><a href="goals.html">Career Goals</a></li>
-        </ul>
-      </nav>
+<!-- Navbar layout reference: MDN [5] -->
+<nav>
+  <ul class="nav-bar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="resume.html">View My Resume</a></li>
+    <li><a href="coverletter.html" aria-current="page">Cover Letter</a></li>
+    <li><a href="goals.html">Career Goals</a></li>
+  </ul>
+</nav>
       
     <main>
         <div class="container">
       <section>
           <article>
-              <p>Dear <mark>Hiring Manager</mark>,</p>
+              <p>Dear <strong>Hiring Manager</strong>,</p>
   
               <p>
                   I am excited to submit my application for the <strong>Software Engineer/UX Designer</strong> position at <strong>your organization</strong>. As a passionate and adaptable professional with a background in both software engineering and user experience design, I am confident that my unique skill set would contribute to creating user-centered, scalable, and impactful solutions at your company.
@@ -99,7 +89,7 @@
               </p>
   
               <p>
-                  One project that stands out is my work on <em>workplace management</em>, where I was tasked with designing a responsive web application for <span>Esteemed</span>. I collaborated with a team of developers to ensure the user interface not only adhered to modern design principles but was also optimized for functionality and performance. This experience reinforced my ability to communicate effectively across disciplines and provided valuable insights into balancing user needs with technical requirements.
+                  One project that stands out is my work on <em>workplace management</em>, where I was tasked with designing a responsive web application for <strong>Esteemed</strong>. I collaborated with a team of developers to ensure the user interface not only adhered to modern design principles but was also optimized for functionality and performance. This experience reinforced my ability to communicate effectively across disciplines and provided valuable insights into balancing user needs with technical requirements.
               </p>
   
               <p>
@@ -123,6 +113,7 @@
         
         <article>
             <h2>Contact Me</h2>
+          <!-- Form structure reference: W3Schools [7] -->
             <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
               <label for="firstName">First Name:</label>
               <input type="text" id="firstName" name="firstName" required>
@@ -157,31 +148,85 @@
               <input type="submit" value="Send">
             </form>
           </article>          
+        <sup><a href="#ref-7">[7]</a></sup>
 
     </div>
       <hr>
 
  </main>
 
-   <footer>
-    <p>&copy; 2025 Cody Beale | Contact: codybealeux@gmail.com</p>
-    <div id="date"></div>
+<footer>
+  <p>&copy; 2025 Cody Beale | Contact: codybealeux@gmail.com</p>
+
+  <section id="code-attributions">
     <h2>Code Attributions</h2>
-  <ul>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toDateString" target="_blank">MDN: Date.toDateString()</a> – for JavaScript date script</li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById" target="_blank">MDN: Document.getElementById()</a> – for element selection</li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables" target="_blank">MDN: HTML Tables</a> – for table structure and elements</li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics" target="_blank">MDN: HTML Semantics</a> – for use of HTML5 structural tags</li>
-  </ul>
+    <ol>
+      <li id="ref-1"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang" target="_blank" rel="noopener noreferrer">MDN Web Docs, "HTML5 Doctype & Language attribute," accessed May 21, 2025</a></li>
+      <li id="ref-2"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta" target="_blank" rel="noopener noreferrer">MDN Web Docs, "Meta charset and viewport tags," accessed May 21, 2025</a></li>
+      <li id="ref-3"><a href="https://www.w3schools.com/css/css_form.asp" target="_blank" rel="noopener noreferrer">W3Schools, "CSS Forms Tutorial," accessed May 21, 2025</a></li>
+      <li id="ref-4"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toDateString" target="_blank" rel="noopener noreferrer">MDN Web Docs, "JavaScript Date.toDateString()," accessed May 21, 2025</a></li>
+      <li id="ref-5"><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks" target="_blank" rel="noopener noreferrer">MDN Web Docs, "HTML Navigation Bar Basics," accessed May 21, 2025</a></li>
+      <li id="ref-6"><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables" target="_blank" rel="noopener noreferrer">MDN Web Docs, "HTML Tables," accessed May 21, 2025</a></li>
+      <li id="ref-7"><a href="https://www.w3schools.com/html/html_forms.asp" target="_blank" rel="noopener noreferrer">W3Schools, "HTML Forms," accessed May 21, 2025</a></li>
+      <li id="ref-8"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" target="_blank" rel="noopener noreferrer">MDN Web Docs, "HTML Image Element," accessed May 21, 2025</a></li>
+      <li id="ref-9"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video" target="_blank" rel="noopener noreferrer">MDN Web Docs, "HTML Video Element," accessed May 21, 2025</a></li>
+      <li id="ref-10"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank" rel="noopener noreferrer">MDN Web Docs, "HTML Audio Element," accessed May 21, 2025</a></li>
+    </ol>
+  </section>
+
+  <section id="media-attributions">
+    <h2>Media Attributions</h2>
+    <ol start="11">
+      <li id="ref-11">Videos of Jiufen and Guanyinshan, Taiwan — recorded by Cody Beale, 2025, Taiwan.</li>
+      <li id="ref-12">Original music track <em>We Came From Light</em> composed by Cody Beale, 2025, Sacramento, CA.</li>
+      <li id="ref-13">Images on this page sourced from <a href="https://www.wallpaperflare.com" target="_blank" rel="noopener noreferrer">Wallpaperflare</a>, accessed May 21, 2025.</li>
+    </ol>
+  </section>
 </footer>
 
 
-<script>
-    // Borrowed from MDN: Using toLocaleDateString() to format and display the current date
+ <script>
+      // Date display script – MDN [4]
     document.getElementById("date").innerText = "Today's date: " + new Date().toLocaleDateString();
-    // Console log for confirmation – original
     console.log("Résumé page loaded successfully.");
-</script> 
+
+  
+  // Wait for the DOM to load
+  document.addEventListener("DOMContentLoaded", function () {
+    // Select all numbered reference links
+    const refLinks = document.querySelectorAll('a[href^="#ref-"]');
+
+    refLinks.forEach(link => {
+      link.addEventListener("click", function (event) {
+        // Prevent default jump to handle custom scroll & highlight
+        event.preventDefault();
+
+        // Get the target ID from href attribute, e.g. "#ref-1"
+        const targetId = this.getAttribute("href").substring(1);
+        const targetElem = document.getElementById(targetId);
+
+        if (targetElem) {
+          // Scroll smoothly to the reference item in footer
+          targetElem.scrollIntoView({ behavior: "smooth", block: "center" });
+
+          // Remove highlight from any previously highlighted refs
+          document.querySelectorAll(".highlight-ref").forEach(el => {
+            el.classList.remove("highlight-ref");
+          });
+
+          // Add highlight class to the clicked reference item
+          targetElem.classList.add("highlight-ref");
+
+          // Optionally, remove highlight after a few seconds (e.g., 3 seconds)
+          setTimeout(() => {
+            targetElem.classList.remove("highlight-ref");
+          }, 3000);
+        }
+      });
+    });
+  });
+
+</script>
   
   
 </body>

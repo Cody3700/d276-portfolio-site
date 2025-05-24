@@ -1,19 +1,18 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!-- Source: MDN [1] -->
 
-<html lang="en">
+<html lang="en"><!-- Source: MDN [1] -->
 
 <head>
-    <meta charset="UTF-8" />
+  <meta charset="UTF-8" /><!-- Source: MDN [2] -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Cody Beale – Software engineering student and UX/UI designer with a strong background in web development, user-centered design, and problem solving." />
   <meta name="keywords" content="Cody Beale, software engineer, UX designer, UI designer, web development, user experience, portfolio, Sacramento, front-end developer, coding student" />
   <meta name="author" content="Cody Beale" />
   <title>Cody Beale – Software Engineering Student & UX/UI Designer</title>
+  
   <link rel="icon" href="/favicon.ico" />
-    <title>My Resume</title>
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-
+  <link rel="stylesheet" href="css/style.css" />
+  <style> /* Form styling inspired by W3Schools [3] */
     form {
       display: grid;
       gap: 10px;
@@ -24,7 +23,9 @@
       border-radius: 5px;
     }
 
-    input, select, textarea {
+    input,
+    select,
+    textarea {
       padding: 8px;
       font-size: 1rem;
     }
@@ -32,156 +33,229 @@
     label {
       font-weight: bold;
     }
-    </style>
-    
+
+    ul.custom-marker {
+      list-style-type: circle;
+      margin-left: 20px;
+      color: #333;
+      font-size: 1rem;
+    }
+
+  </style>
 </head>
 
+<!-- Page structure uses semantic HTML5 tags based on MDN Semantics guide: https://developer.mozilla.org/en-US/docs/Glossary/Semantics -->
 <body>
-    <header>
-        <h1>Cody Beale's Portfolio</h1>
-        <p><em>Web Developer | UX/UI Designer | Software Engineer</em></p>
-    </header>
-
-    <nav>
-        <ul class="nav-bar">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="resume.html">View My Resume</a></li>
-          <li><a href="coverletter.html">Cover Letter</a></li>
-          <li><a href="goals.html">Career Goals</a></li>
-        </ul>
-    </nav>
+    
+  <header>
+    <h1>Cody Beale's Portfolio</h1>
+    <p><em>Web Developer | UX/UI Designer | Software Engineer</em></p>
+     <!-- JavaScript date insertion reference: MDN [4] -->
+      <p id="date"></p><sup><a href="#ref-4">[4]</a></sup>
       
 
-    <main>
+  </header>
+
+  <!-- Navbar layout reference: MDN [5] -->
+  <nav>
+    <ul class="nav-bar">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="resume.html">View My Resume</a></li>
+      <li><a href="coverletter.html">Cover Letter</a></li>
+      <li><a href="goals.html">Career Goals</a></li>
+    </ul>
+  </nav>
+
+  <main>
     <div class="container">
-    <section>
+      <section>
         <h2>Summary</h2>
         <p><strong>Experienced</strong> full-stack developer with a passion for clean design and intuitive user experience.</p>
-    </section>
-    <section>
-    <h3>Experience</h3>
-    <article>
-        <h4>UX/UI Designer - Freelance.</h4>
-        <p>2020 - Present</p>
-        <p>Designed responsive applications using Figma, HTML, CSS, and JavaScript.<br>Led a team of junior developers and worked for several companies and startups.</p>
-        <h4>Web Designer - Freelance.</h4>
-        <p>2016 - Present</p>
-        <p>Designed responsive websites using HTML, CSS, and JavaScript.</p>
-        
-    </article>
-    </section>
+      </section>
 
-    <hr>
-    <section>
+      <section>
+        <h3>Experience</h3>
+        <article>
+          <h4>UX/UI Designer - Freelance</h4>
+          <p>2020 - Present</p>
+          <p>Designed responsive applications using Figma, HTML, CSS, and JavaScript.<br>Led a team of junior developers and worked for several companies and startups.</p>
+
+          <h4>Web Designer - Freelance</h4>
+          <p>2016 - Present</p>
+          <p>Designed responsive websites using HTML, CSS, and JavaScript.</p>
+        </article>
+      </section>
+
+      <hr>
+
+      <section>
         <h3>Skills</h3>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>Python</li>
-            <li>C/C++</li>
-            <li>JavaScript</li>
-            <li>SQL</li>
-            <li>Bash/Shell</li>
+        <ul class="custom-marker">
+          <li>HTML & CSS</li>
+          <li>Python</li>
+          <li>C/C++</li>
+          <li>JavaScript</li>
+          <li>SQL</li>
+          <li>Bash/Shell</li>
         </ul>
-    </section>
+      </section>
 
-    <section>
+      <section>
         <h3>Education</h3>
+        <!-- Table structure reference: MDN [6] -->
         <table>
-            <caption>Academic Background</caption>
-            <thead>
-                <tr>
-                    <th>Degree</th>
-                    <th>Institution</th>
-                    <th>Year</th>
-                    <th>GPA</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>B.S. in Software Engineering</td>
-                    <td>WGU</td>
-                    <td>2024</td>
-                    <td>3.9</td>
-                </tr>
-               <tr>
-                    <td>General Education Coursework</td>
-                    <td>Sophia Learning LLC</td>
-                    <td>2024</td>
-                    <td>Completed</td>
-                </tr>
-
-                <tr>
-                    <td>Certification</td>
-                    <td>UX/UI Bootcamp</td>
-                    <td>2020</td>
-                    <td>Pass</td>
-                </tr>
-            </tbody>
+          <caption>Academic Background</caption>
+          <thead>
+            <tr>
+              <th>Degree</th>
+              <th>Institution</th>
+              <th>Year</th>
+              <th>GPA</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>B.S. in Software Engineering</td>
+              <td>WGU</td>
+              <td>2024</td>
+              <td>3.9</td>
+            </tr>
+            <tr>
+              <td>General Education Coursework</td>
+              <td>Sophia Learning LLC</td>
+              <td>2024</td>
+              <td>Completed</td>
+            </tr>
+            <tr>
+              <td>Certification</td>
+              <td>UX/UI Bootcamp</td>
+              <td>2020</td>
+              <td>Pass</td>
+            </tr>
+          </tbody>
         </table>
-    </section>
-    <hr>
+        <sup><a href="#ref-6">[6]</a></sup>
+      </section>
 
-     <section>
-        
-               <article>
-            <h2>Contact Me</h2>
-            <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
-              <label for="firstName">First Name:</label>
-              <input type="text" id="firstName" name="firstName" required>
-          
-              <label for="lastName">Last Name:</label>
-              <input type="text" id="lastName" name="lastName" required>
-          
-              <label for="company">Company Name:</label>
-              <input type="text" id="company" name="company">
-          
-              <label for="email">Email Address:</label>
-              <input type="email" id="email" name="email" required>
-          
-              <label for="phone">Phone Number:</label>
-              <input type="tel" id="phone" name="phone">
-          
-              <label for="message">Message:</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
-          
-              <p>Best Contact Time:</p>
-              <label><input type="radio" name="contactTime" value="am"> A.M.</label>
-              <label><input type="radio" name="contactTime" value="pm"> P.M.</label>
-              <label><input type="radio" name="contactTime" value="anytime" checked> Anytime</label>
-          
-              <label for="contactMethod">Preferred Contact Method:</label>
-              <select id="contactMethod" name="contactMethod">
-                <option value="phone">Phone</option>
-                <option value="email">Email</option>
-                <option value="text">Text</option>
-              </select>
-          
-              <input type="submit" value="Send">
-            </form>
-          </article>  
+      <hr>
+
+      <section>
+        <article>
+          <h2>Contact Me</h2>
+          <!-- Form structure reference: W3Schools [7] -->
+          <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="company">Company Name:</label>
+            <input type="text" id="company" name="company">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <p>Best Contact Time:</p>
+            <label><input type="radio" name="contactTime" value="am"> A.M.</label>
+            <label><input type="radio" name="contactTime" value="pm"> P.M.</label>
+            <label><input type="radio" name="contactTime" value="anytime" checked> Anytime</label>
+
+            <label for="contactMethod">Preferred Contact Method:</label>
+            <select id="contactMethod" name="contactMethod">
+              <option value="phone">Phone</option>
+              <option value="email">Email</option>
+              <option value="text">Text</option>
+            </select>
+
+            <input type="submit" value="Send">
+          </form>
+        </article>
+        <sup><a href="#ref-7">[7]</a></sup>
+      </section>
+
+      
+    </div>
 
 
-</body>
+  </main>
 
-</div> 
-</main>
+ <footer>
+  <p>&copy; 2025 Cody Beale | Contact: codybealeux@gmail.com</p>
 
-<footer>
-    <p>&copy; 2025 Cody Beale | Contact: codybealeux@gmail.com</p>
-    <div id="date"></div>
+  <section id="code-attributions">
     <h2>Code Attributions</h2>
-  <ul>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toDateString" target="_blank">MDN: Date.toDateString()</a> – for JavaScript date script</li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById" target="_blank">MDN: Document.getElementById()</a> – for element selection</li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables" target="_blank">MDN: HTML Tables</a> – for table structure and elements</li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics" target="_blank">MDN: HTML Semantics</a> – for use of HTML5 structural tags</li>
-  </ul>
+    <ol>
+      <li id="ref-1"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang" target="_blank" rel="noopener noreferrer">MDN Web Docs, "HTML5 Doctype & Language attribute," accessed May 21, 2025</a></li>
+      <li id="ref-2"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta" target="_blank" rel="noopener noreferrer">MDN Web Docs, "Meta charset and viewport tags," accessed May 21, 2025</a></li>
+      <li id="ref-3"><a href="https://www.w3schools.com/css/css_form.asp" target="_blank" rel="noopener noreferrer">W3Schools, "CSS Forms Tutorial," accessed May 21, 2025</a></li>
+      <li id="ref-4"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toDateString" target="_blank" rel="noopener noreferrer">MDN Web Docs, "JavaScript Date.toDateString()," accessed May 21, 2025</a></li>
+      <li id="ref-5"><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks" target="_blank" rel="noopener noreferrer">MDN Web Docs, "HTML Navigation Bar Basics," accessed May 21, 2025</a></li>
+      <li id="ref-6"><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables" target="_blank" rel="noopener noreferrer">MDN Web Docs, "HTML Tables," accessed May 21, 2025</a></li>
+      <li id="ref-7"><a href="https://www.w3schools.com/html/html_forms.asp" target="_blank" rel="noopener noreferrer">W3Schools, "HTML Forms," accessed May 21, 2025</a></li>
+      <li id="ref-8"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" target="_blank" rel="noopener noreferrer">MDN Web Docs, "HTML Image Element," accessed May 21, 2025</a></li>
+      <li id="ref-9"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video" target="_blank" rel="noopener noreferrer">MDN Web Docs, "HTML Video Element," accessed May 21, 2025</a></li>
+      <li id="ref-10"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank" rel="noopener noreferrer">MDN Web Docs, "HTML Audio Element," accessed May 21, 2025</a></li>
+    </ol>
+  </section>
+
+  <section id="media-attributions">
+    <h2>Media Attributions</h2>
+    <ol start="11">
+      <li id="ref-11">Videos of Jiufen and Guanyinshan, Taiwan — recorded by Cody Beale, 2025, Taiwan.</li>
+      <li id="ref-12">Original music track <em>We Came From Light</em> composed by Cody Beale, 2025, Sacramento, CA.</li>
+      <li id="ref-13">Images on this page sourced from <a href="https://www.wallpaperflare.com" target="_blank" rel="noopener noreferrer">Wallpaperflare</a>, accessed May 21, 2025.</li>
+    </ol>
+  </section>
 </footer>
 
-
-<script>
+  <script>
+      // Date display script – MDN [4]
     document.getElementById("date").innerText = "Today's date: " + new Date().toLocaleDateString();
     console.log("Résumé page loaded successfully.");
-</script>
+
+  
+  // Wait for the DOM to load
+  document.addEventListener("DOMContentLoaded", function () {
+    // Select all numbered reference links
+    const refLinks = document.querySelectorAll('a[href^="#ref-"]');
+
+    refLinks.forEach(link => {
+      link.addEventListener("click", function (event) {
+        // Prevent default jump to handle custom scroll & highlight
+        event.preventDefault();
+
+        // Get the target ID from href attribute, e.g. "#ref-1"
+        const targetId = this.getAttribute("href").substring(1);
+        const targetElem = document.getElementById(targetId);
+
+        if (targetElem) {
+          // Scroll smoothly to the reference item in footer
+          targetElem.scrollIntoView({ behavior: "smooth", block: "center" });
+
+          // Remove highlight from any previously highlighted refs
+          document.querySelectorAll(".highlight-ref").forEach(el => {
+            el.classList.remove("highlight-ref");
+          });
+
+          // Add highlight class to the clicked reference item
+          targetElem.classList.add("highlight-ref");
+
+          // Optionally, remove highlight after a few seconds (e.g., 3 seconds)
+          setTimeout(() => {
+            targetElem.classList.remove("highlight-ref");
+          }, 3000);
+        }
+      });
+    });
+  });
+  </script>
+</body>
 
 </html>
