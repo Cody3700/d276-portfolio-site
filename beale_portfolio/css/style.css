@@ -46,6 +46,14 @@ header {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+
+  .important {
+    color: darkblue;
+    font-style: italic;
+    text-decoration: underline;
+  }
+
+
 @media (max-width: 768px) {
   .same-size-img {
     max-width: 100%;  
